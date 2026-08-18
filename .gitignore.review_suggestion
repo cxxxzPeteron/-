@@ -1,0 +1,53 @@
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and package caches
+.venv-sim/
+.venv-train/
+# Do not delete this audited cache from the workspace; only keep it out of Git.
+.train-wheel-cache/
+**/.cache/
+**/cuda-cache/
+
+# Temporary files and repeated logs
+tmp/
+temp/
+**/tmp/
+**/temp/
+*.tmp
+*.log
+
+# Raw datasets and large binary arrays
+data/raw/**
+*.h5
+*.hdf5
+*.mat
+*.npy
+*.npz
+*.parquet
+
+# Model weights (retain manifests/audits/metrics separately)
+*.pt
+*.pth
+*.ckpt
+
+# Large prediction detail; keep run manifests, metrics, histories and audits
+runs/**/predictions.jsonl
+runs/**/predictions.csv
+
+# Keep lightweight control evidence under runs/, analysis/, and data/processed/.
+!runs/**/manifest*.json
+!runs/**/*metrics*.json
+!runs/**/*history*.json
+!runs/**/*completion*.json
+!runs/**/*resource*.json
+!analysis/**/*.json
+!analysis/**/*.md
+!analysis/**/*.csv
+!data/processed/**/manifest*.json
+!data/processed/**/schema*.json
+!data/processed/**/README*.md

@@ -1,0 +1,4 @@
+# Direct dependency for the Basilisk simulation environment.
+bsk[all,examples]==2.11.1
+# Direct dependency for target-domain telemetry storage.
+h5py==3.14.0
